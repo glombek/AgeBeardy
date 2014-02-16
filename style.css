@@ -1,0 +1,59 @@
+body, html {
+    height:100%;
+    margin:0;
+    padding:0;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    overflow: hidden;
+}
+a, body {
+    color: #1e1e1e;
+}
+
+
+label {
+    font-weight: bold;
+}
+
+#beardies {
+    position: relative;
+    height: 100%;
+}
+
+#beardies div {
+    position: absolute;
+    background-size:cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width:100%;
+    opacity:0;
+    
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+    
+}
+#ager{
+    z-index: 100;
+    background-color: rgba(205,205,205,0.5);
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    padding: 1ex;
+}
+
+#beardies #baby {
+    background-image: url(img/baby.jpg);
+    opacity: 1;
+}
+#beardies #kid {
+    background-image: url(img/kid.jpg);
+    opacity: 1;
+}
+#beardies #now {
+    background-image: url(img/now.jpg);
+}
